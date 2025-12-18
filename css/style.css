@@ -26,7 +26,7 @@ img {
 /* Reset end */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -37,4 +37,59 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#page_main .baner {
+  width: 100%;
+  height: 660px;
+}
+#page_main .baner .container {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#page_main .baner .container h1 {
+  font-size: 80px;
+}
+#page_main .baner .container .efficiency-improvements {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  border: 20px solid;
+  border-bottom: none;
+  border-radius: 20px 20px 0px 0px;
+}
+#page_main .baner .container .efficiency-improvements-interior {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 102%;
+  height: 102%;
+  border: 0px solid;
+  border-bottom: none;
+  border-radius: 15px 15px 0px 0px;
+  background-image: url(../img/Inner-screen.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#page_main .baner .container .efficiency-improvements::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -220px;
+  top: 58px;
+  width: 1200px;
+  height: 322px;
+  background-color: #8E9C78;
+  border: 0px solid;
+  border-radius: 30px;
 }
